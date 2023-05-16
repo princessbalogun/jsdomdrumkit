@@ -1,0 +1,67 @@
+#header {
+  background-color: rgb(255, 252, 252);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    
+  }
+
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    text-decoration-line: underline;
+}
+
+  
+
+  
+#drumkit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("drums.jpg");
+  }
+  
+  .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .key:hover {
+    transform: scale(1.1);
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: orange;
+    box-shadow: 0 0 1rem yellow ;
+  }
+  
+
+  #drumkit .key:nth-child(1) { transform: rotate(0deg) translate(200px) rotate(-0deg); }
+  #drumkit .key:nth-child(2) { transform: rotate(40deg) translate(200px) rotate(-40deg); }
+  #drumkit .key:nth-child(3) { transform: rotate(80deg) translate(200px) rotate(-80deg); }
+  #drumkit .key:nth-child(4) { transform: rotate(120deg) translate(200px) rotate(-120deg); }
+  #drumkit .key:nth-child(5) { transform: rotate(160deg) translate(200px) rotate(-160deg); }
+  #drumkit .key:nth-child(6) { transform: rotate(200deg) translate(200px) rotate(-200deg); }
+  #drumkit .key:nth-child(7) { transform: rotate(240deg) translate(200px) rotate(-240deg); }
+  #drumkit .key:nth-child(8) { transform: rotate(280deg) translate(200px) rotate(-280deg); }
+  #drumkit .key:nth-child(9) { transform: rotate(320deg) translate(200px) rotate(-320deg); }
+  
